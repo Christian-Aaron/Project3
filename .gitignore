@@ -106,7 +106,7 @@ console.log("this gives us a totle of " + GameBoardTotal);
 
 gameboard.setNegativeSpace(0);
 
-console.log("Using weekly special, you are able to remove negative spaces giving you only " + gameboard.totalSpaces() + " to go.");
+console.log("Using weekly special, you are able to remove negative spaces giving you only " + gameboard.Space() + " spaces to go.");
 
 
 
@@ -149,11 +149,11 @@ var gamedice = {
 var GameBoardTypes = ["Easter Hill", "Java Mountain", "Bootcamp Vally"];
 	var i = 0;
 		while (GameBoardTypes [i]){
-			console.log(GameBoardTypes[i] + "<br />");
+			console.log(GameBoardTypes[i]);
 			i++;
 			
 	};
-	
+	console.log("These are your maps that you can choose from.");
 
 	
 
