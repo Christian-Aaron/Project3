@@ -78,7 +78,83 @@ if (status = "online"){
 	console.log("Error, you need to be online.");
 };
 
+// objects
 
+var gameboard = {
+
+	"PostiveSpace" : 24,
+	"NegativeSpace" : 18,
+	"Space" : function(){ //method accessor
+		
+		var totalSpaces = this.PostiveSpace + this.NegativeSpace;
+
+		return totalSpaces;
+
+	}, //end function
+	"setNegativeSpace" : function(ByeNegativeSpace) { //mutator
+
+		this.NegativeSpace = ByeNegativeSpace;
+		
+	}
+
+} // end var
+
+var GameBoardTotal = gameboard.totalSpaces();
+
+console.log("the board has " + gameboard.PostiveSpace + ", and " + gameboard.NegativeSpaces + " negative spaces.");
+console.log("this gives us a totle of " + GameBoardTotal);
+
+gameboard.setNegativeSpace(0);
+
+console.log("Using weekly special, you are able to remove negative spaces giving you only " + gameboard.totalSpaces() + " to go.");
+
+
+
+var role = 6;
+var gamedice = { 
+	"dice": "Dodecahedron", 
+	"AverageRoll": 8, 
+	"NegativeRole": [
+		-2, 
+		-4
+	],
+	"DicePlayed" : function(gamedice.dice){
+		var diceType = gamedice.dice;
+		
+		if (diceType = "regularDice"){
+			console.log(STOP, you are playing with the wrong dice!");
+		}else{
+			console.log(You have the correct dice to play.);
+			
+		};
+		return diceType;
+	},
+	"Moves&Roles" : function(){
+		var TotalRoles = gamedice.AverageRoll + gamedice.NegativeRole[0] + role;
+		
+		returne TotalRoles
+		},
+		if (TotalRoles <= 12) {
+			var luck = "You are not having the best of luck today.";
+			console.log(luck);
+		}else{
+			var luck = "You are on fire, keep it up!";
+			console.log(luck);
+		}
+		return luck;
+	
+}; //end gamedice
+
+var GameBoardTypes = ["Easter Hill", "Java Mountain", "Bootcamp Vally"];
+	var i = 0;
+		while (GameBoardTypes [i]){
+			console.log(GameBoardTypes[i] + "<br />");
+			i++;
+			
+	};
+	
+
+	
 
 
 	
