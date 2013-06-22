@@ -1,3 +1,20 @@
+//Project 3
+//Aaron Christian
+// SDI 1306
+
+var Evil = function(){
+
+var BadPlayer = ["Slimmy Sam", "Terible Tom", "Gross Gus"];
+
+for (var x=1; x <= BadPlayer.length; x++) {
+	console.log(BadPlayer[x]);
+	}
+	return BadPlayer;
+ } 
+Evil();
+
+
+ 
 var json = {
  "characters" : [
   { 
@@ -60,3 +77,8 @@ if (status = "online"){
 }else{
 	console.log("Error, you need to be online.");
 };
+
+
+
+
+	
