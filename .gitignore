@@ -1,0 +1,9 @@
+var Evil = Function(){
+var BadPlayer = ["Slimmy Sam", "Terible Tom", "Gross Gus"]
+
+for (x=1; x <= count(BadPlayer); x++) {
+	console.log(BadPlayer[x] + "<br />");
+	}
+	return BadPlayer
+ };	
+Evil();
