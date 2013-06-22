@@ -1,9 +1,62 @@
-var Evil = Function(){
-var BadPlayer = ["Slimmy Sam", "Terible Tom", "Gross Gus"]
+var json = {
+ "characters" : [
+  { 
+   "name" : "Easter Bunny Pete",
+   "special" : "Easter Egg Surpirse",
+   "special" : " Giant Jump (jump over 3+ spaces)"
+  
+  },
+   {
+   "name" : "Coffee Can Man",
+   "special" : "Mocha Min",
+   "special" : "Java Speed (move fast (run 3+- spaces)"
+  },
+   {
+   "name" : "Major Underpants",
+   "special" : "Underware SlingShot",
+   "special" : "Parchute Drop (land 3+- Spaces) "
+  }
+ ]
+};
 
-for (x=1; x <= count(BadPlayer); x++) {
-	console.log(BadPlayer[x] + "<br />");
+var Players = "",
+		x = "",
+		y = "";
+
+while (Players.length > x){
+ 
+ Players = json.characters.name;
+ console.log(json.characters.name);
+  while(characters.length > y){
+  
+ if (Players (x) = (json.characters.name)){
+    console.log(json.characters.special);
+ }
+ y++;
+ }
+ x++;
+};
+
+var CheckPlayer = "Terible Tom";
+var status = "";
+if (Players[CheckPlayer] === undefined){
+	console.log(CheckPlayer + " is not online at this time.");
+	status = "offline";
+	
+}else{
+	console.log(CheckPlayer + " is online.");
+	status = "online";
+	
+};
+
+if (status = "online"){
+	if(CheckPlayer = "Major Underpants"){
+		console.log("You choose an amazing player!");
+	}else if (CheackPlayer = "Terible Tom"){
+		console.log("You need to pick a different player.");
+	}else{
+		console.log("We dont know you, please register.");
 	}
-	return BadPlayer
- };	
-Evil();
+}else{
+	console.log("Error, you need to be online.");
+};
