@@ -1,4 +1,124 @@
-"DicePlayed" : function(gamedice.dice){
+//Project 3
+//Aaron Christian
+// SDI 1306
+
+var Evil = function(){
+
+var BadPlayer = ["Slimmy Sam", "Terible Tom", "Gross Gus"];
+
+for (var x=1; x <= BadPlayer.length; x++) {
+	console.log(BadPlayer[x]);
+	}
+	return BadPlayer;
+ } 
+Evil();
+
+
+ 
+var json = {
+ "characters" : [
+  { 
+   "name" : "Easter Bunny Pete",
+   "special" : "Easter Egg Surpirse",
+   "special" : " Giant Jump (jump over 3+ spaces)"
+  
+  },
+   {
+   "name" : "Coffee Can Man",
+   "special" : "Mocha Min",
+   "special" : "Java Speed (move fast (run 3+- spaces)"
+  },
+   {
+   "name" : "Major Underpants",
+   "special" : "Underware SlingShot",
+   "special" : "Parchute Drop (land 3+- Spaces) "
+  }
+ ]
+};
+
+var Players = "",
+		x = "",
+		y = "";
+
+while (Players.length > x){
+ 
+ Players = json.characters.name;
+ console.log(json.characters.name);
+  while(characters.length > y){
+  
+ if (Players (x) = (json.characters.name)){
+    console.log(json.characters.special);
+ }
+ y++;
+ }
+ x++;
+};
+
+var CheckPlayer = "Terible Tom";
+var status = "";
+if (Players[CheckPlayer] === undefined){
+	console.log(CheckPlayer + " is not online at this time.");
+	status = "offline";
+	
+}else{
+	console.log(CheckPlayer + " is online.");
+	status = "online";
+	
+};
+
+if (status = "online"){
+	if(CheckPlayer = "Major Underpants"){
+		console.log("You choose an amazing player!");
+	}else if (CheackPlayer = "Terible Tom"){
+		console.log("You need to pick a different player.");
+	}else{
+		console.log("We dont know you, please register.");
+	}
+}else{
+	console.log("Error, you need to be online.");
+};
+
+// objects
+
+var gameboard = {
+
+	"PostiveSpace" : 24,
+	"NegativeSpace" : 18,
+	"Space" : function(){ //method accessor
+		
+		var totalSpaces = this.PostiveSpace + this.NegativeSpace;
+
+		return totalSpaces;
+
+	}, //end function
+	"setNegativeSpace" : function(ByeNegativeSpace) { //mutator
+
+		this.NegativeSpace = ByeNegativeSpace;
+		
+	}
+
+} // end var
+
+var GameBoardTotal = gameboard.Space();
+
+console.log("the board has " + gameboard.PostiveSpace + ", and " + gameboard.NegativeSpaces + " negative spaces.");
+console.log("this gives us a totle of " + GameBoardTotal);
+
+gameboard.setNegativeSpace(0);
+
+console.log("Using weekly special, you are able to remove negative spaces giving you only " + gameboard.totalSpaces() + " to go.");
+
+
+
+var role = 6;
+var gamedice = { 
+	"dice": "Dodecahedron", 
+	"AverageRoll": 8, 
+	"NegativeRole": [
+		-2, 
+		-4
+	],
+	  "dicePlayed" : function(dice){
 		var diceType = gamedice.dice;
 		
 		if (diceType = "regularDice"){
@@ -8,3 +128,34 @@
 			
 		};
 		return diceType;
+	},
+	 "Moves&Roles" : function(){
+		var TotalRoles = gamedice.AverageRoll + gamedice.NegativeRole[0] + role;
+		
+		return TotalRoles;
+		
+		
+		if (TotalRoles < 12) {
+			var luck = "You are not having the best of luck today.";
+			console.log(luck);
+		}else{
+			var luck = "You are on fire, keep it up!";
+			console.log(luck);
+		};
+		return luck;
+	}
+}; //end gamedice
+
+var GameBoardTypes = ["Easter Hill", "Java Mountain", "Bootcamp Vally"];
+	var i = 0;
+		while (GameBoardTypes [i]){
+			console.log(GameBoardTypes[i] + "<br />");
+			i++;
+			
+	};
+	
+
+	
+
+
+	
